@@ -1,0 +1,89 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  padding-top: 5%;
+}
+
+.YES {
+  border: 2px;
+  border-radius: 15px;
+  padding: 10px 25px;
+  background-color: #6de91b;
+  opacity: 0.85;
+  transition: 0.3s;
+  width: min-content;
+}
+
+.NO {
+  border: 2px;
+  border-radius: 15px;
+  padding: 10px 25px;
+  background-color: #db4439;
+  opacity: 0.85;
+  transition: 0.3s;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+button {
+    overflow: hidden;
+  font-weight: bold;
+  color: black;
+  letter-spacing: 0.05em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  animation: jadu 4.2s, jaddu 2s;
+  animation-delay: 0s, 4.2s;
+}
+
+h1 {
+  overflow: hidden;
+  letter-spacing: 0.15em;
+  white-space: nowrap;
+  animation: typing 4s steps(50, end), blink-caret 0.75s step-end infinite;
+  color: rgb(253, 110, 134);
+}
+
+
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes jadu {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes jaddu {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: .85;
+    }
+  }
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: tomato;
+  }
+}
